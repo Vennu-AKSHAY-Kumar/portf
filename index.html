@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+
+    <header class="header">
+    <a href="#" class="logo" style="font-size: 50px;">Akshay Kumar Vennu</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <nav class="navbar" >
+        <a href="#home" class="NAVLINKS active" onclick="mark()" style="position: relative; left: -100px;" >Home</a>
+        <a href="#skills" class="NAVLINKS " onclick="mark()" style="position: relative; left: -100px;">Skills</a>
+        <a href="#projects" class="NAVLINKS " onclick="mark()" style="position: relative; left: -100px;">Projects</a>
+        <a href="#contact" class="NAVLINKS " onclick="mark()" style="position: relative; left: -100px;">Contact</a>
+      </nav>
+    </header>
+
+    <script>
+      const menuIcon = document.getElementById('menu-icon');
+      const navbar = document.querySelector('.navbar');
+    
+      menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+      });
+    </script>
+
+
+    <section class="home" id="home">
+      <div class="home-content">
+
+        <div class="header-container">
+          <h1>Hi, I'm <span class="typing"></span><span class="cursor"></span></h1>
+      </div>
+      
+
+        <!-- <h1>Hi, I'm <span class="typing"></span><span class="cursor"></span></h1> -->
+
+       <!--  <h1>Hi, I'm 
+        <span class="typing"></span></h1> -->
+
+        <!-- <h1>Hi, I'm <br>Akshay Kumar Vennu <br/>--> <!-- <span class="typ-animation"></span></h1> This is a comment -->
+        <div class="text-animate">
+          <h3>Fresher</h3>
+        </div>
+        <p style="font-family: Poppins, sans-serif; font-size: 16px; line-height: 1.6; color: #fffefe; ; text-align: justify; background-color: #001C29;">
+          A highly motivated and enthusiastic Information Technology graduate eager to kickstart a rewarding career in software
+          development. Passionate about learning new technologies and applying them to solve real-world problems. Seeking
+          an entry-level position where I can contribute my skills in programming, problem-solving, and teamwork to drive
+          innovation and growth within a dynamic organization.
+        </p>
+        
+        <div class="btn-box">
+          <a href="#projects" class="btn" style="width: 250px;">Frontend Dev</a>
+          <a href="#contact" class="btn" style="width: 200px;" >Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="profile-image">
+        <img src="images/about2.png" alt="Akshay Kumar Vennu" >
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="home-sci">
+       <!--  <a href="https://github.com/Vennu-AKSHAY-Kumar"><img src="" alt=""></a> -->
+         <br>
+       <a href="https://github.com/Vennu-AKSHAY-Kumar" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+             alt="GitHub" 
+             width="40" 
+             height="40">
+    </a>
+    
+        <a href="https://www.linkedin.com/in/akshay-kumar-vennu-a21788203/"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </section>
+
+
+    <section class="skills" id="skills" style="margin-bottom: 200px;">
+      <h2 class="title"><span>Technical</span> skills</h2>
+      <div class="skills-row">
+        <div class="skills-column">
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="content">
+                <div class="skills-heading"><i class='bx bxs-pin'></i> <span>Programming languages</span></i></div>
+                <p><i class='bx bxs-right-arrow'></i> Java <br><i class='bx bxs-right-arrow'></i> C <br><i class='bx bxs-right-arrow'></i> JavaScript </p>
+              </div>
+            </div>
+            <div class="skills-content">
+              <div class="content">
+                <div class="skills-heading"><i class='bx bxs-pin'></i> <span>Web Development Technologies</span></i></div>
+                <p><i class='bx bxs-right-arrow'></i> HTML <br><i class='bx bxs-right-arrow'></i> CSS <br><i class='bx bxs-right-arrow'></i> React JS </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-column">
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="content">
+                <div class="skills-heading"><i class='bx bxs-pin'></i> <span>Concepts</span></i></div>
+                <p><i class='bx bxs-right-arrow'></i> Object-Oriented Programming (OOPS) <br><i class='bx bxs-right-arrow'></i> Data Structures and Algorithms <br><i class='bx bxs-right-arrow'></i> Operating System </p>
+              </div>
+            </div>
+            <div class="skills-content">
+              <div class="content">
+                <div class="skills-heading"><i class='bx bxs-pin'></i> <span>Database and Query Languages</span></i></div>
+                <p><i class='bx bxs-right-arrow'></i> SQL </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="title2"><span>Professional</span> skills</h2>
+      <div class="prof-skills">
+        <div class="radial-bar">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+            <circle class="path path-1" cx="50" cy="50" r="40"></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text text1"><br>creativity</div>
+        </div>
+        <div class="radial-bar">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+            <circle class="path path-2" cx="50" cy="50" r="40"></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text text2"><br>problem-solving</div>
+        </div>
+        <div class="radial-bar">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+            <circle class="path path-3" cx="50" cy="50" r="40"></circle>
+          </svg>
+          <div class="percentage">85%</div>
+          <div class="text text3"><br>communication</div>
+        </div>
+        <div class="radial-bar">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+            <circle class="path path-4" cx="50" cy="50" r="40"></circle>
+          </svg>
+          <div class="percentage">80%</div>
+          <div class="text text4"><br>leadership</div>
+        </div>
+        <div class="radial-bar">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+            <circle class="path path-5" cx="50" cy="50" r="40"></circle>
+          </svg>
+          <div class="percentage">95%</div>
+          <br>
+          <div class="text text5" ><br>Time-management</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="projects" id="projects" >
+      <h1 class="heading"><span>My</span> Projects</h1>
+      <div class="works">
+        <div class="work">
+          <iframe src="https://drive.google.com/file/d/1Wy7PrE2c9o5_WyLKV862Sd2EvxFlz5Ff/preview" width="400" height="300" allow="autoplay"></iframe>
+
+          <!-- <iframe src="https://drive.google.com/file/d/1Wy7PrE2c9o5_WyLKV862Sd2EvxFlz5Ff/preview" 
+          style="width: 25vw; height: 30vh;" 
+          allow="autoplay">
+          </iframe> -->
+            <!-- <img src="/images/geminiclone.jpg" alt=""> -->
+          <div class="work-layer">
+            <h4>Gemini Clone</h4>
+            <p>Gemini AI clone using React.js and integrated Gemini API key for real-time experience, demonstrating proficiency in both frontend development and API integration.</p>
+            <a href="https://geminiclonebysg.vercel.app/"><i class='bx bxs-rocket'></i></a>
+          </div>
+        </div>
+
+
+        <div class="work">
+          <!-- <img src="/images/portfolio.png" alt=""> -->
+          <iframe src="https://drive.google.com/file/d/12n8AUkTt5zLlpiyhW6CmNyAdSUqCK8_2/preview" 
+          width="600" height="300" 
+          allow="autoplay">
+          </iframe>
+          <div class="work-layer">
+            <h4>My Portfolio</h4>
+            <p>A sleek portfolio website with sections for Home, Skills, Projects, and Contact using HTML, CSS, and JavaScript, showcasing strong frontend development skills and user-centric design.</p>
+            <a href="#home"><i class='bx bxs-rocket'></i></a>
+          </div>
+        </div>
+
+
+
+        <div class="work">
+        <!--   <img src="/images/ttt.webp" alt=""> -->
+        <iframe src="https://drive.google.com/file/d/13hDfM1a_kZp9QzbqbVbdYiY0_MiXJ60z/preview" 
+        width="400" height="219" 
+        allow="autoplay">
+</iframe>
+          <div class="work-layer">
+            <h4>Tic Tac Toe</h4>
+            <p>2-player Tic Tac Toe game using HTML, CSS, and JavaScript, allowing players to compete against each other locally, showcasing frontend development skills and interactive design.</p>
+            <a href="https://tttbysg.vercel.app"><i class='bx bxs-rocket'></i></a>
+          </div>
+        </div>
+
+
+
+        <div class="work">
+          <iframe src="https://drive.google.com/file/d/1DhQIqJ9DBiU1ez83Rwmt6ALuoDtXPSUV/preview" 
+          width="300" height="220" allow="autoplay"></iframe>
+          <!-- <img src="/images/codepen.jpg" alt=""> -->
+          <div class="work-layer">
+            <h4>CodePen</h4>
+            <p>CodePen is a dynamic web application which is capable of running HTML, CSS and JavaScript codes while displaying its output simultaneously utilizing HTML, CSS, and JavaScript, showcasing  my skills in frontend development.</p>
+            <a href="https://codepenbysg.vercel.app"><i class='bx bxs-rocket'></i></a>
+          </div>
+        </div>
+
+        
+        <div class="work">
+          <iframe src="https://drive.google.com/file/d/1L--8SBpRoNrttj1e46arJyGiwRZ2lVxJ/preview" 
+          width="300" height="200" allow="autoplay"></iframe>
+          <!-- <img src="/images/sentiment-analysis.png" alt=""> -->
+          <div class="work-layer">
+            <h4>Sentiment Analysis</h4>
+            <p>Sentiment Analysis project in Python utilizing the NLTK library and Vader for text processing and sentiment scoring, showcasing expertise in natural language processing and machine learning techniques.</p>
+            <a href="https://colab.research.google.com/github/SharavanGannu-SG/Sentiment-Analysis/blob/main/Sentiment_analysis.ipynb"><i class='bx bxs-rocket'></i></a>
+          </div>
+        </div>
+        <br>
+    
+      </div>
+
+    </section>
+
+    
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact <span>Me</span></h1>
+            <p><i class='bx bxl-gmail'></i> vennu.akshay.kumar@gmail.com </p>
+            <p><i class='bx bxs-phone'></i> +91 8519808810 </p>
+            <a href="AkshayvResume.pdf" download class="btn" >Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="8" placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <span class="msg"></span>
+      </div>
+    </section>
+
+    <script>
+
+
+
+      var navelements=document.getElementsByClassName("NAVLINKS");
+
+      function mark(){
+          for(elem of navelements){
+              elem.classList.remove("active");
+          }
+          event.currentTarget.classList.add("active");
+      }
+
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwiPLYtAB95vN4PIZqWlrDpZEgugaMIbgZX7KVrSt-fCD9WKInZHW_6crLe-0nDvK-u/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.querySelector('.msg')
+
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                msg.innerHTML="Thank you for reaching out to me !";
+                setTimeout(function(){
+                  msg.innerHTML="";
+                },5000)
+                form.reset()
+              })
+              .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
